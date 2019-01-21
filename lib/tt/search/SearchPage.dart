@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:toutiao/toutiao/search/SearchBody.dart';
-import 'package:toutiao/toutiao/search/SearchTitle.dart';
+import 'package:toutiao/tt/search/SearchBody.dart';
+import 'package:toutiao/tt/search/SearchTitle.dart';
 
 class SearchPage extends StatefulWidget {
   @override

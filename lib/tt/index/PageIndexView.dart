@@ -2,7 +2,7 @@ import 'dart:convert' show json;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:toutiao/toutiao/infolist/ImageListItem.dart';
+import 'package:toutiao/tt/infolist/ImageListItem.dart';
 import 'package:toutiao/vo/Article.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 

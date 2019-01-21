@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:toutiao/toutiao/search/DefaultSearchBody.dart';
+import 'package:toutiao/tt/search/DefaultSearchBody.dart';
 
 class SearchBody extends StatefulWidget {
   _SearchBodyState bodyState = new _SearchBodyState();

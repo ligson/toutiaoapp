@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:toutiao/toutiao/index/PageIndexView.dart';
+import 'package:toutiao/tt/index/PageIndexView.dart';
 
 class IndexTab extends StatefulWidget {
   @override

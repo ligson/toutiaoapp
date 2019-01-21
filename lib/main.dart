@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:toutiao/toutiao/infolist/IndexPage.dart';
-import 'package:toutiao/toutiao/search/SearchPage.dart';
+import 'package:toutiao/tt/infolist/IndexPage.dart';
+import 'package:toutiao/tt/search/SearchPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     //final wordPair = new WordPair.random();
 
     return new MaterialApp(
-      title: '今日头条',
+      title: '我的头条',
       /*home: new Scaffold(
         appBar: new AppBar(
           title: new Text('Welcome to Flutter'),

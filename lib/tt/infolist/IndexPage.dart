@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:toutiao/toutiao/index/IndexTab.dart';
-import 'package:toutiao/toutiao/infolist/SearchTxt.dart';
+import 'package:toutiao/tt/index/IndexTab.dart';
+import 'package:toutiao/tt/infolist/SearchTxt.dart';
 
 class IndexPage extends StatefulWidget {
   @override
