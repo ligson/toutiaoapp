@@ -1,6 +1,6 @@
-# flutterdemo
+# toutiaoapp
 
-A new Flutter project.
+使用flutter模仿今日头条
 
 ## Getting Started
 
