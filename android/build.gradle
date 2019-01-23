@@ -3,7 +3,7 @@ buildscript {
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         maven { url "https://maven.aliyun.com/repository/google" }
         maven { url "https://maven.aliyun.com/repository/jcenter" }
-        jcenter() { url 'https://lib.yonyougov.top/repository/jcenter/' }
+        jcenter()
         google()
     }
 
@@ -17,7 +17,7 @@ allprojects {
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         maven { url "https://maven.aliyun.com/repository/google" }
         maven { url "https://maven.aliyun.com/repository/jcenter" }
-        jcenter() { url 'https://lib.yonyougov.top/repository/jcenter/' }
+        jcenter()
         google()
     }
 }

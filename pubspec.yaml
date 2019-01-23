@@ -25,6 +25,8 @@ dependencies:
   json_serializable: ^2.0.0
   fluttertoast: ^2.2.6
   flutter_search_panel: ^1.0.0
+  #https://pub.dartlang.org/packages/device_apps
+  device_apps: ^1.0.5
 
 
 dev_dependencies:

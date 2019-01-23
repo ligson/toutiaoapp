@@ -24,3 +24,11 @@ samples, guidance on mobile development, and a full API reference.
 
    第一行： 其中的package记住 然后执行 adb uninstall com.example.flutterdemo
    ```
+
+2. 图标和名称修改
+    
+    1. 安卓更改AndroidManifest.xml
+    
+    2. 苹果AppIcon.appiconset 
+    
+    3. 可以参考https://www.jianshu.com/p/10b93adf842c

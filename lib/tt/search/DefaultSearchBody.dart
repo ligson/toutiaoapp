@@ -6,6 +6,10 @@ class DefaultSearchBody extends StatefulWidget {
 }
 
 class _DefaultSearchBody extends State<DefaultSearchBody> {
+  void _deleteHistoryClk() {
+    print("删除历史记录");
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -16,10 +20,25 @@ class _DefaultSearchBody extends State<DefaultSearchBody> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 new Container(
-                  padding: EdgeInsets.only(left: 10),
-                  child: new Text(
-                    "历史记录",
-                    style: TextStyle(fontSize: 16, wordSpacing: 1.5),
+                  padding: EdgeInsets.only(left: 10, top: 5),
+                  height: 30,
+                  child: new Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      new Text(
+                        "历史记录",
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            wordSpacing: 1.5),
+                      ),
+                      new IconButton(
+                        icon: new Icon(Icons.delete,
+                            color: Colors.grey, size: 20),
+                        onPressed: _deleteHistoryClk,
+                      )
+                    ],
                   ),
                 ),
                 new Row(
@@ -40,10 +59,15 @@ class _DefaultSearchBody extends State<DefaultSearchBody> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 new Container(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: EdgeInsets.only(left: 10, top: 5),
+                  height: 30,
                   child: new Text(
                     "热门",
-                    style: TextStyle(fontSize: 16, wordSpacing: 1.5),
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.grey,
+                        fontWeight: FontWeight.bold,
+                        wordSpacing: 1.5),
                   ),
                 ),
                 new Column(
