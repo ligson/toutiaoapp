@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:device_apps/device_apps.dart';
+import 'dart:async';
 
 class ShareDlg extends Dialog {
   @override
@@ -23,21 +25,46 @@ class _ShareToApp extends StatefulWidget {
 }
 
 class _ShareToAppState extends State<_ShareToApp> {
-  List<Tab> _apps = List();
+  List<Widget> _apps = List();
+  List<Application> _installedApps = List();
+
+  Future _getApps() async {
+    _installedApps = await DeviceApps.getInstalledApplications();
+  }
+
+  //@TODO 不能使用
+  void _getLocalInstallApps() {
+    _getApps();
+    print(_installedApps.length);
+    for (int i = 0; i < _installedApps.length; i++) {
+      ApplicationWithIcon installApp = _installedApps[i];
+      _apps.add(Tab(
+        text: installApp.appName,
+        child: Image.memory(installApp.icon),
+      ));
+    }
+  }
+
+  void _getStaticApps() {
+    var icon = ImageIcon(
+      AssetImage("images/wechat.jpeg"),
+      size: 50,
+    );
+    _apps.add(icon);
+    _apps.add(icon);
+    _apps.add(icon);
+    _apps.add(icon);
+    _apps.add(icon);
+    _apps.add(icon);
+    _apps.add(icon);
+  }
 
   @override
   void initState() {
     super.initState();
+//images/wechat.jpeg
     setState(() {
-      for (int i = 0; i < 10; i++) {
-        _apps.add(Tab(
-          text: "微信",
-          icon: Icon(
-            Icons.cake,
-            size: 50,
-          ),
-        ));
-      }
+      _getStaticApps();
     });
   }
 
